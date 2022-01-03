@@ -1,0 +1,102 @@
+body {
+	font-family: Tahoma;
+	color:#5B2C6F;
+}
+
+a:link, a:visited { /* for link buttons */
+	background-color:#FFC300;
+	color:#900C3F;
+	font-size:18px;
+	text-align:center;
+	text-decoration:none;
+	padding: 15px;
+	border-radius:12px;
+}
+
+a:hover, a:active { /* when hovered over */
+	background-color:#900C3F;
+	color:white;
+}
+
+footer a:link, footer a:visited { /* reference links */
+	color:#5B2C6F;
+	text-decoration:underline;
+	background-color:transparent;
+}
+
+footer a:hover, footer a:active { /* when hovered over */
+	color:#FFC300;
+	text-decoration:none;
+}
+
+header { /* site header */
+	font-size:24px;
+	text-align:center;
+	width:auto;
+	border:5px solid black;
+	background-color:#fff9eb;
+}
+
+#link { /* for links */
+	text-align:center;
+	margin:50px;
+}
+
+#desc { /* for text paragraphs */
+	font-size: 20px;
+	text-align:center;
+	width:auto;
+	border:3px solid black;
+	border-radius:8px; 
+	padding:20px;
+	margin:5px;
+	overflow:auto;
+	background-color:#fff9eb;
+}
+
+#desc2 { 
+	font-size: 20px;
+	text-align:center;
+	width:20%;
+	border:3px solid black;
+	border-radius:8px; 
+	padding:20px;
+	margin:5px;
+	overflow:auto;
+	background-color:#fff9eb;
+	float:left;
+	position:relative;
+}
+
+#pic {
+	float:left;
+	margin:20px;
+}
+
+#pic2 { /* centered image */
+	float:none;
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+
+table {
+	border-collapse:collapse;
+	text-align:center;
+	padding:20px;
+	width:75%;
+	height:245px;
+	float:right;
+	background-color:#fff9eb;
+	margin-bottom:20px;
+}
+
+th, td {
+	border:2px solid #900C3F;
+}
+
+iframe { /* for youtube video */
+	display:block;
+	margin:0 auto;
+} 

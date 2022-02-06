@@ -1,9 +1,13 @@
 body {
 	font-family: Tahoma;
 	color:#5B2C6F;
+	background-image:url("../images/bg_image.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 }
 
-a:link, a:visited { /* for link buttons */
+/*  a:link, a:visited { original links
 	background-color:#FFC300;
 	color:#900C3F;
 	font-size:18px;
@@ -13,15 +17,14 @@ a:link, a:visited { /* for link buttons */
 	border-radius:12px;
 }
 
-a:hover, a:active { /* when hovered over */
+a:hover, a:active { 
 	background-color:#900C3F;
 	color:white;
-}
+} */
 
 footer a:link, footer a:visited { /* reference links */
 	color:#5B2C6F;
 	text-decoration:underline;
-	background-color:transparent;
 }
 
 footer a:hover, footer a:active { /* when hovered over */
@@ -100,3 +103,102 @@ iframe { /* for youtube video */
 	display:block;
 	margin:0 auto;
 } 
+
+nav ul { /* for nav bar */
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#FFEDDB;
+	position:fixed;
+	top:0;
+	width:100%;
+}
+
+nav li {
+	float:left;
+}
+
+nav li a {
+	display:block;
+	font-weight:bold;
+	color:#5B2C6F;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+}
+
+nav li a:hover:not(#active) {
+	background-color:#900C3F;
+	color:white;
+}
+
+#active {
+	background-color:#DAF7A6;
+}
+
+#sprite { /* socmed links */
+	position:fixed;
+	width:10%;
+	top:0;
+	right:0;
+}
+
+#sprite li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:absolute;
+	top:0;
+}
+
+#sprite li, #sprite a {
+	width:33px;
+	height:33px;
+	display:block;
+}
+
+#facebook {
+	background:url('../images/spritesheet.png') no-repeat -10px -10px;
+	left:0px;
+	width:33px;
+	height:33px;
+}
+
+#instagram {
+	background:url('../images/spritesheet.png') no-repeat -63px -10px;
+	left:43px;
+	width:33px;
+	height:33px;
+}
+
+#twitter {
+	background:url('../images/spritesheet.png') no-repeat -116px -10px;
+	left:86px;
+	width:33px;
+	height:33px;
+}
+
+#facebook a:hover {
+	background:url('../images/spritesheet.png') no-repeat -10px -63px;
+	width:33px;
+	height:33px;
+}
+
+#instagram a:hover {
+	background:url('../images/spritesheet.png') no-repeat -63px -63px;
+	width:33px;
+	height:33px;
+}
+
+#twitter a:hover {
+	background:url('../images/spritesheet.png') no-repeat -116px -63px;
+	width:33px;
+	height:33px;
+}
+
+img:hover { /* scale */
+	-ms-transform: scale(1.5, 1.5); /* IE 9 */
+	-webkit-transform: scale(1.5, 1.5); /* Safari prior 9.0 */
+	transform: scale(1.5, 1.5); /* Standard syntax */
+}
